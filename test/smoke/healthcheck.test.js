@@ -5,7 +5,7 @@ var httpTimeout = 5000;
 
 // TODO Frontend URL must be retrieve from Vault
 
-var frontendURL = process.env.SMOKETEST_URL || 'http://localhost:1337';
+var frontendURL = process.env.SMOKETEST_URL || 'http://localhost:8080';
 if(! frontendURL.endsWith('/')){
   frontendURL = frontendURL + '/';
 }
