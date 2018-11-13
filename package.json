@@ -12,7 +12,6 @@
     "test:unit": "NODE_ENV=test NODE_PATH=. mocha './test/unit/**/*.test.js' --reporter spec --recursive",
     "test:coverage": "NODE_ENV=test NODE_PATH=. istanbul cover _mocha './test/unit/*.test.js'",
     "test:acceptance": "NODE_ENV=test NODE_PATH=. mocha './test/acceptance/**/*.test.js' --reporter spec --recursive",
-    "test:nsp": "NODE_PATH=. nsp check",
     "test:smoke": "NODE_ENV=test NODE_PATH=. mocha './test/smoke/**/*.test.js' --reporter spec --recursive",
     "test:a11y": "NODE_PATH=.",
     "sonar-scan": "NODE_PATH=. sonar-scanner"
@@ -29,7 +28,6 @@
     "eslint-plugin-mocha": "^4.8.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
-    "nsp": "^2.8.1",
     "pa11y": "^4.13.0",
     "should": "^11.2.1",
     "should-http": "^0.1.0",
