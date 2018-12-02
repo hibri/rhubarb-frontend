@@ -12,9 +12,7 @@
     "test:unit": "NODE_ENV=test NODE_PATH=. mocha './test/unit/**/*.test.js' --reporter spec --recursive",
     "test:coverage": "NODE_ENV=test NODE_PATH=. istanbul cover _mocha './test/unit/*.test.js'",
     "test:acceptance": "NODE_ENV=test NODE_PATH=. mocha './test/acceptance/**/*.test.js' --reporter spec --recursive",
-    "test:smoke": "NODE_ENV=test NODE_PATH=. mocha './test/smoke/**/*.test.js' --reporter spec --recursive",
-    "test:a11y": "NODE_PATH=.",
-    "sonar-scan": "NODE_PATH=. sonar-scanner"
+    "test:smoke": "NODE_ENV=test NODE_PATH=. mocha './test/smoke/**/*.test.js' --reporter spec --recursive"
   },
   "dependencies": {
     "express": "^4.14.0",
@@ -22,17 +20,15 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
+    "chai-http": "^4.2.0",
     "cross-env": "^5.0.5",
     "eslint": "^3.17.1",
     "eslint-plugin-mocha": "^4.8.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.2.0",
-    "pa11y": "^4.13.0",
+    "mocha": "^5.2.0",
     "should": "^11.2.1",
     "should-http": "^0.1.0",
     "sinon": "^1.17.7",
-    "sonar-scanner": "^3.0.3",
     "supertest": "^3.0.0"
   }
 }
